@@ -1,6 +1,6 @@
 {
   "name": "xiaomi-notes-exporter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "将小米笔记按云端分类安全同步导出到本地",
   "main": "./out/main/index.js",
   "author": "Something11235",
@@ -50,5 +50,5 @@
     "vite": "^7.2.6",
     "vitest": "^4.1.11"
   },
-  "productName": "小米笔记同步工具"
+  "productName": "小米笔记同步助手"
 }

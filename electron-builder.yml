@@ -1,5 +1,5 @@
 appId: com.something.xiaomi-notes-exporter
-productName: 小米笔记同步工具
+productName: 小米笔记同步助手
 directories:
   buildResources: build
 files:
@@ -19,8 +19,8 @@ win:
     - portable
 nsis:
   artifactName: xiaomi-notes-exporter-${version}-setup.${ext}
-  shortcutName: 小米笔记同步工具
-  uninstallDisplayName: 小米笔记同步工具
+  shortcutName: 小米笔记同步助手
+  uninstallDisplayName: 小米笔记同步助手
   createDesktopShortcut: always
 portable:
   artifactName: xiaomi-notes-exporter-${version}-portable.${ext}

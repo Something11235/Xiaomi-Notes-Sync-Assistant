@@ -136,7 +136,7 @@ function App(): React.JSX.Element {
           <CloudDownload size={24} strokeWidth={2.2} />
         </div>
         <div className="brand-copy">
-          <h1>小米笔记同步工具</h1>
+          <h1>小米笔记同步助手</h1>
           <p>本地导出</p>
         </div>
         <div className={snapshot.account.loggedIn ? 'account-state online' : 'account-state'}>
