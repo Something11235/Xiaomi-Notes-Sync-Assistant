@@ -1,0 +1,40 @@
+appId: com.something.xiaomi-notes-exporter
+productName: 小米笔记同步工具
+directories:
+  buildResources: build
+files:
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+  - '!{.eslintcache,eslint.config.mjs,.prettierignore,.prettierrc.yaml,README.md}'
+  - '!{.env,.env.*,.npmrc,package-lock.json}'
+  - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+asarUnpack:
+  - resources/**
+win:
+  executableName: xiaomi-notes-exporter
+  signAndEditExecutable: false
+  target:
+    - nsis
+    - portable
+nsis:
+  artifactName: xiaomi-notes-exporter-${version}-setup.${ext}
+  shortcutName: 小米笔记同步工具
+  uninstallDisplayName: 小米笔记同步工具
+  createDesktopShortcut: always
+portable:
+  artifactName: xiaomi-notes-exporter-${version}-portable.${ext}
+mac:
+  entitlementsInherit: build/entitlements.mac.plist
+  notarize: false
+dmg:
+  artifactName: xiaomi-notes-exporter-${version}.${ext}
+linux:
+  target:
+    - AppImage
+    - deb
+  maintainer: Something11235
+  category: Utility
+appImage:
+  artifactName: xiaomi-notes-exporter-${version}.${ext}
+npmRebuild: false
